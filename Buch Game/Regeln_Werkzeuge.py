@@ -7,8 +7,6 @@ class Würfel:
         return random.randint(1, self.anzahlSeiten)
 
 class Kampfregeln:
-    def __init__(self):
-        pass
-    def kampf(self, Held, Gegner):
+    def kampf(self, k1, k2):
         pass
 
