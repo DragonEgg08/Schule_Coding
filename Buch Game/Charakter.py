@@ -21,5 +21,12 @@ class Zauberer(Held):
 
 
 class Krieger(Held):
-    def __init__(self, stärke:int, angriffswert:int, lebenspunkte:int, name: str = "Link"):
+    def __init__(self, stärke:int, angriffswert:int, lebenspunkte:int, ausdauer:int, name: str = "Link"):
         super().__init__(stärke, angriffswert, lebenspunkte, name)
+        self.ausdauer = ausdauer
+
+
+class Monster:
+    def __init__(self, angriffswert:int, lebenspunkte:int):
+        self.angriffswert = angriffswert
+        self.lebenspunkte = lebenspunkte
