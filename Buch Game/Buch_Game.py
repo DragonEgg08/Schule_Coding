@@ -4,5 +4,8 @@ from Regeln_Werkzeuge import Kampfregeln
 
 #Materialdatenbank füllen
 
-Kampfregeln()
-Spieler_Waffe = Waffe(10, "Holz", 4)
+
+Spieler = Krieger(10, 10, 100, 10, "Gerald")
+Gegner = Monster(10, 100)
+
+Kampfregeln.kampf(Spieler, Gegner)

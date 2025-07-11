@@ -1,12 +1,15 @@
 import random
 
 class Würfel:
-    def __init__(self, anzahlSeiten:int=20):
-            self.anzahlSeiten = anzahlSeiten
-    def würfeln(self) -> int:
-        return random.randint(1, self.anzahlSeiten)
+    def würfeln(anzahlSeiten:int=10) -> int:
+        return random.randint(1, anzahlSeiten)
 
 class Kampfregeln:
-    def kampf(self, k1, k2):
-        pass
-
+    def kampf(k1, k2):
+        Runden = 0
+        while True:
+            Runden += 1
+            print("Runde " + str(Runden))
+            print("Spieler würfelt...")
+            Zahl = Würfel.würfeln()
+            print(Zahl)

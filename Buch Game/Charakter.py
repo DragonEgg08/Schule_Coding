@@ -4,6 +4,9 @@ class Held:
         self.stärke = stärke
         self.angriffswert = angriffswert
         self.lebenspunkte = lebenspunkte
+    def angreifen(self, Monster, Kampfregel):
+        pass
+
 
 
 class Zauberer(Held):
