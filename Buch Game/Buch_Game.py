@@ -8,4 +8,5 @@ from Regeln_Werkzeuge import Kampfregeln
 Spieler = Krieger(10, 10, 100, 10, "Gerald")
 Gegner = Monster(10, 100)
 
-Kampfregeln.kampf(Spieler, Gegner)
+Schwert = Waffe(1,"Holz",1)
+print(Schwert.bonusBerechnen())
